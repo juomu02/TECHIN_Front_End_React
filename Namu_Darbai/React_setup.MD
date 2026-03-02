@@ -25,7 +25,7 @@
 
 4. ### npm run dev runs the website
     ```
-    npm run
+    npm run dev
     ```
 
 5. ### eslint extension*
