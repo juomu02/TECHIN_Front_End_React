@@ -1,7 +1,7 @@
 # React project setup
 
  1. ### Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
-    (https://nodejs.org/en)
+    https://nodejs.org/en
 
     ###### node command lets us run JS code outside of a browser, e.g.
     ```
@@ -32,7 +32,7 @@
     *eslint highlights problems in our JavaScript code.
 
 6. ### install Tailwind*
-    (https://tailwindcss.com/docs/installation/using-vite)
+    https://tailwindcss.com/docs/installation/using-vite
 
 7. ### install Axios
     ###### Axios emulates backend API
@@ -42,9 +42,7 @@
 
 8. ### install Hook-form
     ###### Hook-form form management library
-    ```
     https://react-hook-form.com/get-started
-    ```
 
 # File and folder review
 
