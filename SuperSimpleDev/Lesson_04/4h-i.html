@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lesson 4h-i</title>
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        display: flex;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100vh;
+        background-color: rgb(222, 222, 222);
+      }
+      .interactive-button {
+        background-color: rgb(25, 135, 84);
+        color: white;
+        padding: 10px 15px;
+        font-size: 15px;
+        border: none;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      function CounterApp() {
+        const [count, setCount] = React.useState(0);
+
+        const counterRef = React.useRef(count);
+
+        function addClick() {
+          setCount(count + 1);
+        }
+
+        function reset() {
+          setCount(0);
+        }
+
+        function autoClick() {
+          setInterval(() => {
+            const buttonElem = counterRef.current;
+            buttonElem.click();
+          }, 1000);
+        }
+
+        return (
+          <>
+            <div className="button-container">
+              <>
+                <button
+                  className="interactive-button"
+                  onClick={addClick}
+                  ref={counterRef}
+                >
+                  Clicked {count === 1 ? count + " time" : count + " times"}
+                </button>
+                <button className="interactive-button" onClick={reset}>
+                  Reset
+                </button>
+                <button className="interactive-button" onClick={autoClick}>
+                  Auto Click
+                </button>
+              </>
+            </div>
+          </>
+        );
+      }
+
+      function App() {
+        return (
+          <>
+            4h-i
+            <CounterApp />
+            <hr />
+          </>
+        );
+      }
+
+      const container = document.querySelector(".js-container");
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>

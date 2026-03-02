@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lesson 4f-g</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      function Clock() {
+        const [time, setTime] = React.useState(dayjs().format("HH:mm:ss"));
+
+        React.useEffect(() => {
+          setInterval(() => {
+            setTime(dayjs().format("HH:mm:ss"));
+          }, 1000);
+          console.log("code runs");
+        }, []);
+
+        return <div>Current time: {time}</div>;
+      }
+
+      function App() {
+        return (
+          <>
+            4f
+            <Clock />
+          </>
+        );
+      }
+
+      const container = document.querySelector(".js-container");
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>
