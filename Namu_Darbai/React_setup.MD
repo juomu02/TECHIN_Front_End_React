@@ -8,33 +8,43 @@
     node react-basics.js
     ```
 
-2. ### npm (Node Package Manager) lets us install external libraries (or packages) into our project
+    ### npm (Node Package Manager) lets us install external libraries (or packages) into our project
     ```
     npm install create-vite
     ```
 
-3. ### npx command installs and executes a package, e.g.
+2. ### npx command installs and executes a package, e.g.
     ```
     npx create-vite
     ```
 
-4. ### npm install command installs all packages listed in package.json as dependencies
+3. ### npm install command installs all packages listed in package.json as dependencies
     ```
     npm install
     ```
 
-5. ### npm run dev runs the website
+4. ### npm run dev runs the website
     ```
     npm run
     ```
 
-6. ### eslint extension*
+5. ### eslint extension*
     *eslint highlights problems in our JavaScript code.
 
-7. ### install Tailwind*
+6. ### install Tailwind*
     (https://tailwindcss.com/docs/installation/using-vite)
 
+7. ### install Axios
+    ###### Axios emulates backend API
+    ```
+    npm i axios
+    ```
 
+8. ### install Hook-form
+    ###### Hook-form form management library
+    ```
+    https://react-hook-form.com/get-started
+    ```
 
 # File and folder review
 
