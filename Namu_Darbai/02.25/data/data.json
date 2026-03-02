@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "5c79",
+      "username": "3423",
+      "email": "a@a.aa",
+      "channel": "Kevin Powell",
+      "color": "green",
+      "hobbies": [
+        "Traveling"
+      ]
+    }
+  ]
+}
