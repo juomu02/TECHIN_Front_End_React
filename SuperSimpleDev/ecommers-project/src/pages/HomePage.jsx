@@ -4,10 +4,15 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <>
+      <link
+        rel="icon"
+        type="image/svg+xml"
+        href="./public/images/icons/home-favicon.png"
+      />
       <title>Ecommerse Project</title>
 
       <Header />
-      
+
       <div className="home-page">
         <div className="products-grid">
           <div className="product-container">
