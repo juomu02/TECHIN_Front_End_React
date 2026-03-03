@@ -2,13 +2,36 @@
   "users": [
     {
       "id": "5c79",
-      "username": "3423",
+      "username": "Johna",
+      "email": "qa@aa.aa",
+      "channel": "Kevin Powellaaaaaaaaaaaaaaa",
+      "color": "green",
+      "hobbies": [
+        "Traveling"
+      ],
+      "likes": 5
+    },
+    {
+      "id": "5c792",
+      "username": "34232",
       "email": "a@a.aa",
       "channel": "Kevin Powell",
       "color": "green",
       "hobbies": [
         "Traveling"
-      ]
+      ],
+      "likes": 4
+    },
+    {
+      "id": "5c791",
+      "username": "3423a",
+      "email": "a@a.aa",
+      "channel": "Kevin Powell",
+      "color": "green",
+      "hobbies": [
+        "Traveling"
+      ],
+      "likes": 3
     }
   ]
 }
