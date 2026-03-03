@@ -8,6 +8,7 @@ import { getAllData } from "./services/get.js";
 import { Route, Routes } from "react-router";
 import { NavBar } from "./components/NavBar.jsx";
 import { ChildComponent } from "./components/ChildComponent.jsx";
+import Details from "./components/Details.jsx";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -28,7 +29,9 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<UsersList users={users} />} />
+        <Route path="/" element={<UsersList users={users} />}>
+          <Route path="details/:userid" element={<Details />} />
+        </Route>
         <Route path="/adduser" element={<YoutubeForm />} />
         <Route path="/filter" element={<FilterForm setUsers={setUsers} />} />
         <Route path="/search" element={<SearchForm setUsers={setUsers} />}>

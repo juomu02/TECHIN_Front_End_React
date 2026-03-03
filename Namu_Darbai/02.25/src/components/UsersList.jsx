@@ -1,9 +1,11 @@
 import User from "./User";
 import { Link } from "react-router";
+import { Outlet } from "react-router";
 
 function UsersList({ users }) {
   return (
     <>
+      <Outlet />
       <h1>Users List</h1>
       <>
         {users.map((user) => {

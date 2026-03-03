@@ -3,6 +3,7 @@ import { getOne } from "../services/get.js";
 import updateData from "../services/update.js";
 import UserEditForm from "./UserEditForm.jsx";
 import { useState } from "react";
+import { Link } from "react-router";
 
 function User({ user }) {
   const [formShow, setFormShow] = useState(false);
@@ -41,13 +42,17 @@ function User({ user }) {
             deleteData(user.id);
           }}
         >{`Delete user: ${user.username}`}</button>
-        <button className="bg-blue-300 p-2 rounded-md"
+        <button
+          className="bg-blue-300 p-2 rounded-md"
           onClick={() => {
             setFormShow((prev) => !prev);
           }}
         >
           Edit
         </button>
+        <Link to={`/details/${user.id}`} className="p-2 rounded-md bg-sky-200">
+          Details
+        </Link>
       </div>
     </>
   );
