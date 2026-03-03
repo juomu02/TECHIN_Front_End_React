@@ -69,7 +69,7 @@
    https://react-hook-form.com/dev-tools
 
 10. ### install json-server
-    ###### \*ending "data/data.json --port 3000 is special for this project setup
+    ###### \*parameters "data/data.json --port 3000" are set up for this project
     ```
     npx json-server data/data.json --port 3000
     ```
