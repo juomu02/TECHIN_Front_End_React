@@ -1,7 +1,7 @@
 import CheckoutHeader from "./CheckoutHeader";
 import "./CheckoutPage.css";
 
-function CheckoutPage() {
+function CheckoutPage({cart}) {
   return (
     <>
     <link rel="icon" type="image/svg+xml" href="../../public/cart-favicon.png" />
