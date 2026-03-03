@@ -1,16 +1,6 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 import formatMoney from "../../utils/money";
 
-function ProductsGrid() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    axios.get("/api/products").then((response) => {
-      setProducts(response.data);
-    });
-  }, []);
-
+function ProductsGrid({products}) {
   return (
     <div className="home-page">
       <div className="products-grid">
