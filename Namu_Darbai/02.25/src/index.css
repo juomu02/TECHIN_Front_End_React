@@ -3,3 +3,7 @@
 .error {
   @apply text-red-500 text-sm;
 }
+.active{
+  @apply bg-amber-600;
+  text-decoration: underline;
+}
