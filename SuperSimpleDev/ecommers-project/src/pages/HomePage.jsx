@@ -7,7 +7,7 @@ function HomePage() {
       <link
         rel="icon"
         type="image/svg+xml"
-        href="./public/images/icons/home-favicon.png"
+        href="./public/home-favicon.png"
       />
       <title>Ecommerse Project</title>
 
@@ -55,7 +55,7 @@ function HomePage() {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src="src/assets/images/icons/checkmark.png" />
               Added
             </div>
 
@@ -104,7 +104,7 @@ function HomePage() {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src="src/assets/images/icons/checkmark.png" />
               Added
             </div>
 
@@ -153,7 +153,7 @@ function HomePage() {
             <div className="product-spacer"></div>
 
             <div className="added-to-cart">
-              <img src="images/icons/checkmark.png" />
+              <img src="src/assets/images/icons/checkmark.png" />
               Added
             </div>
 

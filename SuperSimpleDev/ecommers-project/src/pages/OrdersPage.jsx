@@ -8,7 +8,7 @@ function OrdersPage() {
       <link
         rel="icon"
         type="image/svg+xml"
-        href="./public/images/icons/orders-favicon.png"
+        href="./public/orders-favicon.png"
       />
       <title>Orders</title>
       <Header />
@@ -52,7 +52,7 @@ function OrdersPage() {
                 <button className="buy-again-button button-primary">
                   <img
                     className="buy-again-icon"
-                    src="images/icons/buy-again.png"
+                    src="src/assets/images/icons/buy-again.png"
                   />
                   <span className="buy-again-message">Add to Cart</span>
                 </button>
@@ -81,7 +81,7 @@ function OrdersPage() {
                 <button className="buy-again-button button-primary">
                   <img
                     className="buy-again-icon"
-                    src="images/icons/buy-again.png"
+                    src="src/assets/images/icons/buy-again.png"
                   />
                   <span className="buy-again-message">Add to Cart</span>
                 </button>
@@ -130,7 +130,7 @@ function OrdersPage() {
                 <button className="buy-again-button button-primary">
                   <img
                     className="buy-again-icon"
-                    src="images/icons/buy-again.png"
+                    src="src/assets/images/icons/buy-again.png"
                   />
                   <span className="buy-again-message">Add to Cart</span>
                 </button>
