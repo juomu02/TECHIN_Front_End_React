@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Header from "../components/Header";
 import "./OrdersPage.css";
 
-function OrdersPage() {
+function OrdersPage({ cart }) {
   return (
     <>
       <link
@@ -11,7 +11,7 @@ function OrdersPage() {
         href="./public/orders-favicon.png"
       />
       <title>Orders</title>
-      <Header />
+      <Header cart={cart} />
 
       <div className="orders-page">
         <div className="page-title">Your Orders</div>
