@@ -1,12 +1,32 @@
-import { NavLink } from "react-router";
+import { useState } from "react";
+import { useSearchParams, NavLink, useNavigate } from "react-router";
 import "./Header.css";
 
 function Header({ cart }) {
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get("search") || "");
+
+  const handleSearchInput = (event) => {
+    setSearch(event.target.value);
+  };
+
+  const handleSearch = () => {
+    navigate(`/?search=${search}`);
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleSearch();
+    } else if (event.key === "Escape") {
+      setSearch(searchParams.get("search") || "");
+    }
+  };
+
   let totalQuantity = 0;
   cart.forEach((cartItem) => {
     totalQuantity += cartItem.quantity;
   });
-
   return (
     <>
       <div className="header">
@@ -20,9 +40,16 @@ function Header({ cart }) {
           </NavLink>
         </div>
         <div className="middle-section">
-          <input className="search-bar" type="text" placeholder="Search" />
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Search"
+            onChange={handleSearchInput}
+            onKeyDown={handleKeyDown}
+            value={search}
+          />
 
-          <button className="search-button">
+          <button className="search-button" onClick={handleSearch}>
             <img
               className="search-icon"
               src="src/assets/images/icons/search-icon.png"
