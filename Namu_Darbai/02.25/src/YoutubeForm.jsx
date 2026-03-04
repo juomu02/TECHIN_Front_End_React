@@ -1,14 +1,16 @@
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router";
 import { DevTool } from "@hookform/devtools";
 import postData from "./services/post.js";
 
 function YoutubeForm() {
+  let navigate = useNavigate();
   const {
     register,
     handleSubmit,
     watch,
     reset,
-    getValues,
+    // getValues,
     control,
     formState: { errors },
   } = useForm({
@@ -25,8 +27,9 @@ function YoutubeForm() {
 
   const [username, email] = watch(["username", "email"]);
 
-  const submitHandler = (formData) => {
-    postData(formData);
+  const submitHandler = async (formData) => {
+    const postedUser = await postData(formData);
+    if (postedUser) {navigate("/")};
 
     reset();
   };

@@ -32,6 +32,86 @@
         "Traveling"
       ],
       "likes": 3
+    },
+    {
+      "id": "f074",
+      "username": "postedUser",
+      "email": "test@taip.ne",
+      "channel": "Code with Ania Kubow",
+      "color": "green",
+      "hobbies": [
+        "Traveling"
+      ]
+    },
+    {
+      "id": "6c3a",
+      "username": "taip",
+      "email": "ne@aa.cc",
+      "channel": "Code with Ania Kubow",
+      "color": "blue",
+      "hobbies": [
+        "Traveling"
+      ]
+    },
+    {
+      "id": "0dfa",
+      "username": "tst2",
+      "email": "a@a.aa",
+      "channel": "Code with Ania Kubow",
+      "color": "green",
+      "hobbies": [
+        "Reading"
+      ]
+    },
+    {
+      "id": "ed1c",
+      "username": "aaaaaa",
+      "email": "qa@aa.aa",
+      "channel": "Code with Ania Kubow",
+      "color": "green",
+      "hobbies": [
+        "Traveling"
+      ]
+    },
+    {
+      "id": "d380",
+      "username": "test",
+      "email": "ne@aa.cc",
+      "channel": "Code with Ania Kubow",
+      "color": "green",
+      "hobbies": [
+        "Traveling"
+      ]
+    },
+    {
+      "id": "d322",
+      "username": "aaaaaa",
+      "email": "a@a.aa",
+      "channel": "Code with Ania Kubow",
+      "color": "green",
+      "hobbies": [
+        "Traveling"
+      ]
+    },
+    {
+      "id": "27aa",
+      "username": "a@a.aaa",
+      "email": "admin@bademaail.com",
+      "channel": "Code with Ania Kubow",
+      "color": "green",
+      "hobbies": [
+        "Traveling"
+      ]
+    },
+    {
+      "id": "2847",
+      "username": "a32",
+      "email": "admin@bademaail.com",
+      "channel": "Code with Ania Kubow",
+      "color": "blue",
+      "hobbies": [
+        "Cooking"
+      ]
     }
   ]
 }

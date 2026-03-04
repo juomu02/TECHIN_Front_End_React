@@ -4,6 +4,7 @@ import formatMoney from "../../utils/money";
 
 function Product({ loadCart, product }) {
   const [quantity, setQuantity] = useState(1);
+  const [productAdded, setProductAdded] = useState(false);
 
   const selectQuantity = (event) => {
     const quantitySelected = Number(event.target.value);
@@ -16,6 +17,8 @@ function Product({ loadCart, product }) {
       quantity,
     });
     await loadCart();
+    setProductAdded(true);
+    setTimeout(()=>{setProductAdded(false)}, 2000);
   };
 
   return (
@@ -55,7 +58,7 @@ function Product({ loadCart, product }) {
 
       <div className="product-spacer"></div>
 
-      <div className="added-to-cart">
+      <div className="added-to-cart" style={{ opacity: productAdded ? 1 : 0 }}>
         <img src="src/assets/images/icons/checkmark.png" />
         Added
       </div>
