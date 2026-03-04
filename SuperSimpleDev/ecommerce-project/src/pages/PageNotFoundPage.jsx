@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import "./PageNotFoundPage.css";
 
-function PageNotFoundPage() {
+function PageNotFoundPage({cart}) {
   return (
     <>
       <link
@@ -10,7 +10,7 @@ function PageNotFoundPage() {
         href="./public/rip-favicon.png"
       />
       <title>Page Not Found</title>
-      <Header />
+      <Header cart={cart} />
 
       <div className="page-not-found-message">Page was not found. Error 404</div>
     </>
