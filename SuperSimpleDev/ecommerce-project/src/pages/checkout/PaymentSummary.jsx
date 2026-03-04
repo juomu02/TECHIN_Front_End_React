@@ -1,6 +1,6 @@
 import formatMoney from "../../utils/money";
 
-function PaymentSummary(paymentSummary) {
+function PaymentSummary({ paymentSummary }) {
   return (
     <div className="payment-summary">
       <div className="payment-summary-title">Payment Summary</div>
@@ -9,7 +9,7 @@ function PaymentSummary(paymentSummary) {
           <div className="payment-summary-row">
             <div>Items ({paymentSummary.totalItems}):</div>
             <div className="payment-summary-money">
-              {`$${formatMoney(paymentSummary.productCostCents)}`}
+              {formatMoney(paymentSummary.productCostCents)}
             </div>
           </div>
 

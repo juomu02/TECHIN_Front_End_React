@@ -2,7 +2,7 @@ import CartItemDetails from "./CartItemDetails";
 import DeliveryOptions from "./DeliveryOptions";
 import DeliveryDate from "./DeliveryDate";
 
-function OrderSummary({ cart, deliveryOptions }) {
+function OrderSummary({ cart, deliveryOptions, loadCart }) {
   return (
     <>
       {" "}
@@ -20,6 +20,7 @@ function OrderSummary({ cart, deliveryOptions }) {
                   <DeliveryOptions
                     deliveryOptions={deliveryOptions}
                     cartItem={cartItem}
+                    loadCart={loadCart}
                   />
                 </div>
               </div>
