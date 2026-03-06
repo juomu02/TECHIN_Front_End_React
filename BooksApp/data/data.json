@@ -1,0 +1,67 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Grožinė literatūra"
+    },
+    {
+      "id": "2",
+      "name": "Vaikų ir jaunimo literatūra"
+    },
+    {
+      "id": "3",
+      "name": "Dalykinė ir mokslinė literatūra"
+    },
+    {
+      "id": "4",
+      "name": "Laisvalaikio ir praktinės knygos"
+    },
+    {
+      "id": "5",
+      "name": "Menas ir kultūra"
+    },
+    {
+      "id": "6",
+      "name": "Mokomoji literatūra"
+    }
+  ],
+  "books": [
+    {
+      "id": "1583",
+      "title": "Pirma Knyga",
+      "author": "John Smith",
+      "category": "1",
+      "price": "12.50",
+      "cover": "https://picsum.photos/id/237/200/300",
+      "reserved": true
+    },
+    {
+      "id": "d6ca",
+      "title": "Penkta Knyga",
+      "author": "Jenny White",
+      "category": "3",
+      "price": "85.99",
+      "cover": "https://picsum.photos/id/217/200/300",
+      "reserved": false
+    },
+    {
+      "id": "d63a",
+      "title": "Trečia Knyga",
+      "author": "Anna Brown",
+      "category": "3",
+      "price": "89.99",
+      "cover": "https://picsum.photos/id/117/200/300",
+      "reserved": false
+    },
+    {
+      "id": "d65a",
+      "title": "Paskutinė Knyga",
+      "author": "Anna Brown",
+      "category": "3",
+      "price": "89.99",
+      "cover": "https://picsum.photos/id/227/200/300",
+      "reserved": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
