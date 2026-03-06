@@ -33,7 +33,7 @@
       "category": "1",
       "price": "12.50",
       "cover": "https://picsum.photos/id/237/200/300",
-      "reserved": true
+      "reserved": false
     },
     {
       "id": "d6ca",

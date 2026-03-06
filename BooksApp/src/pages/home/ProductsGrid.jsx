@@ -1,26 +1,18 @@
-import axios from "axios";
 import ProductCard from "./ProductCard";
 import "../../App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import BookEditForm from "./BookEditSidebar";
 import BookDetailsSidebar from "./BookDetailsSidebar";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
-function ProductGrid() {
-  const [products, setProducts] = useState(null);
+function ProductGrid({products}) {
   const [isEditOpen, setIsEditOpen] = useState(false);
   const [productToEdit, setProductToEdit] = useState(null);
   const [isDetailsOpen, setIsDetailsOpen] = useState(false);
   const [productDetails, setProductDetails] = useState(null);
 
-  useEffect(() => {
-    const getProductsData = async () => {
-      const response = await axios.get(`${API_URL}/books`);
-      setProducts(response.data);
-    };
-    getProductsData();
-  }, []);
+ 
 
   if (!products) {
     return (

@@ -86,7 +86,6 @@ function RegistryForm() {
         <fieldset className="fieldset">
           <legend className="fieldset-legend">Kategorija:</legend>
           <select
-            defaultValue="Pick a browser"
             className="select"
             id="category"
             {...register("category", {
