@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-body{
-@apply min-w-[400px]
+body {
+  @apply min-w-[400px];
 }
 
 .navbar .active {
@@ -10,30 +10,30 @@ body{
 }
 
 .products-grid {
-  @apply grid grid-cols-4 content-center place-items-center pt-10 pb-40 z-0
+  @apply grid grid-cols-4 content-center place-items-center pt-10 pb-40 z-0;
 }
 
 @media (max-width: 1600px) {
   .products-grid {
-    @apply  grid-cols-3
+    @apply grid-cols-3;
   }
 }
 
 @media (max-width: 1200px) {
   .products-grid {
-    @apply  grid-cols-2
+    @apply grid-cols-2;
   }
 }
 
 @media (max-width: 800px) {
   .products-grid {
-    @apply  grid-cols-1
+    @apply grid-cols-1;
   }
 }
 
-.details{
-  @apply font-serif text-lg
+.details {
+  @apply font-serif text-lg;
 }
-.search-bar{
-  @apply pt-20 pb-2
+.search-bar {
+  @apply pt-20 pb-2;
 }
